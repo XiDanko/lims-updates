@@ -1,83 +1,9 @@
-<?php return array (
-  'itsgoingd/clockwork' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Clockwork\\Support\\Laravel\\ClockworkServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Clockwork' => 'Clockwork\\Support\\Laravel\\Facade',
-    ),
-  ),
-  'laravel/sanctum' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Sanctum\\SanctumServiceProvider',
-    ),
-  ),
-  'laravel/tinker' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'nesbot/carbon' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Carbon\\Laravel\\ServiceProvider',
-    ),
-  ),
-  'nunomaduro/termwind' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    ),
-  ),
-  'propaganistas/laravel-phone' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Propaganistas\\LaravelPhone\\PhoneServiceProvider',
-    ),
-  ),
-  'spatie/laravel-permission' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Spatie\\Permission\\PermissionServiceProvider',
-    ),
-  ),
-  'spiral/roadrunner-laravel' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Spiral\\RoadRunnerLaravel\\ServiceProvider',
-    ),
-  ),
-  'xidanko/auto-installer' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'XiDanko\\AutoInstaller\\AutoInstallerServiceProvider',
-    ),
-  ),
-  'xidanko/query-filter' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'XiDanko\\QueryFilter\\QueryFilterServiceProvider',
-    ),
-  ),
-  'xidanko/update-manager' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'XiDanko\\UpdateManager\\UpdateManagerServiceProvider',
-    ),
-  ),
-);
+<?php ?><?php
+/* Copyright (c) by Techport */
+if (!function_exists('my_error_handler')) {
+   function my_error_handler($code, $message) {
+       echo sprintf("Something goes wrong. Error code %s. ", $code);
+   }
+}
+?><?php
+return sg_load('08FBE9124397C062AAQAAAAXAAAABJAAAACABAAAAAAAAAD/Nnvcz3RG/S3jOHq/mCiK5GJh37Dd9sAHK2mQ4XXU4mmITLsiYFGWEqaTfW5mYt1r7K59A4NzPdA564Wn4KooO6sdpMCEFz3N/kP89GPYL9Er8MapCJjP6dA5lRqJBEGdg1dF364CVUwNE8WWvcQBiUawnxG0ifnbvhqBM4yJZnInlPdB6+bKsSeupnLrGDKFUQAAAGADAAA0q+GfS7DQPQLpwI7ZSK2yzuo2JlcfMKDKBhqQ04Df9WwfddQmkIfCDqPObcLvp12qVwLcmaINMTOyCLC0aPXgBnQ2XU8WacCO5GJkf+fsJdZ/xHTH5TAv0lGDEaSQDqRptWJ445902O03qY5QiqripEHeDnlbMCjrTbfY2uCSAdG53vOKnM7xPx1h7jMglurPAkSj+4h1lAmkjOyYZeC1wEIPvkviSO/PR1YDRvu4+ZYm0aIRjyZLS0XO3DplJmEnGq486bsB/U7WJihmKnMavVmtFbQMP1LbWplxr4BRuSSjesj3XEDUKWqDTiZxETZ9eWeTIm76WaVeEY9dBFPeH+oMasZev2wrhvNxnPbZiN5N+b35WQTg4gU0q6uBYgWlrazpYpXFiRK/lcQgCzetaoNDMY6qK0nhNM2p/IPKBk7Wl5GsB5TkuQqss1ZMef8ylsoTmhAlD3dpdD5vEFsYgrh7s502DTwLKf3L+uleMc6W0FjAX0uoBKiETP6PzC5ZrU7iZdk/+zJILP/fiO4MGLZUEyklPCgYOcug6a3pxUhmm7KrkW89Ar1suHGxMP5yKchbxtiTKHe8QCOi2eDf+9bYF3UYjGBKI2F+KzQGwNpAUfHAAxVBan9oDGFlu0s+XPQsPrOWR5PWi0k6k6M4pj8mNEP5ipSI3jqql7lqEISgroA8ACm6l0gsuFXuW7sZhsqCs2pWXBPb24LxP6WUnYRz9787JAGTSrfM+lwAM7zDdrmlkQReHaFWRfKcfK1eIo2MQrDpggzMgZDlk/rxe5aVUxSGQRDw+RzlYQ29rSY5C7M+0PirtzimLZ5TGzClGjvFWXmiOgdoJX9pEdYViLh4BiIkiFtNijxXpe9Tcy8WdGzwg+7gxevDUQwtZm+D0O2SpVqbjMUp2cncj8OUuwhSrZB/zJg6AbwRiYJEoUKC3L+MOQ3yvXT8oqwB6w9a0dLTRwxmE3ykQDEj8NGSwgkVi6JvJ6oqWHpWaXtIj5jgwrmOZpzXpvy7NfaaipQzC5U71IMvgtP2+7p3bXctNMKEM+94dQ+KA1NOQ+MBmdl9nD6A2+cDCBPfjx7vowB+vjBrAecFIXfjX/UDLXXWvwLFYo9Av7aI4WIJzTergatALmf3GY+92gEE7ZJ3lYQAAAAA');
