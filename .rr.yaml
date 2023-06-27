@@ -1,0 +1,22 @@
+version: "3"
+
+server:
+  command: "php vendor/spiral/roadrunner-laravel/bin/rr-worker start"
+
+rpc:
+  listen: tcp://127.0.0.1:6002
+
+logs:
+  mode: production
+  level: warn
+  encoding: json
+  output: './storage/rr.log'
+  err_output: './storage/rr_errors.log'
+
+http:
+  address: 0.0.0.0:9090
+  middleware: ["static", "gzip"]
+
+  static:
+    dir: "public"
+    forbid: [".php"]
