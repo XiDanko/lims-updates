@@ -1,3 +1,31 @@
+## v1.0.6 - 2023-07-29
+* Fix disable machine showing in results entry
+* Fix editor issues when printing and when copying from ms word
+* Fix permission cache when copying branch data
+* Fix quick add showing disabled tests
+* Fix package includes disabled tests
+* Fix invoice issue when changing item price
+* Fix saving results with two editor parameters same image issue
+* Display error when selecting empty package
+* Ability to search by patient his id, mrn
+* Changes in the his api (partners, price management, mrn and patient id, health information)
+* New patient contact method setting in general settings
+* Formula based result will evaluate to integers if no decimal point exits
+* New parameter result type (multiline)
+* New parameter filter (result type)
+* Overdue time management in results page
+* Remove (received, tested, authorized, released) statuses from "Order change status modal"
+* Inprintable tests now releases at authorization step directly
+
+* ### Database Updates
+* visits: changes
+  * his_visit_id: new (uuid, nullable, index)
+* patients: changes
+  * his_patient_id: new (uuid, nullable, index)
+  * his_patient_mrn: new (unsigned integer, nullable, index)
+* orders: changes
+  * overdue_at: new (datetime, nullable)
+
 ## v1.0.5 - 2023-06-27
 * Fix settings:sync command
 * Fix default field unexpected behavior when editing print templates, print images, price lists
