@@ -2,8 +2,7 @@
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=1920, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name='designer' content='Jalal Al-Mussawi, xidanko07@gmail.com'>
     <link rel="apple-touch-icon" sizes="180x180" href="/storage/favicon/apple-touch-icon.png">

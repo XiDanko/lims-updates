@@ -1,3 +1,20 @@
+## v1.0.7 - 2023-08-12
+* Fix results received from machines having duplicate mapcode results in duplicate entries for same parameter
+* Fix patient name sometimes not showing in followup page
+* Fix barcode auto scanner doesnt allow (-) character
+* Fix validation not cleared after inserting valid value while having other validation errors
+* Ability to add reference ranges without any range to get unit info in the result entry page
+* New "His Integration Settings" page
+* Ability to send patient results to his endpoint using "His Integration Settings"
+* Integration Log now logs all incoming requests
+* Integration Log in case of undefined mapcodes will log only one message per request containing only undefined mapcodes in the data tree
+* Integration Log new filters (sample barcode and level), new messages options in message filter
+* New "Clone" action in roles and result templates
+* Force mobile viewport to initial width of 1920px
+* * ### Database Updates
+* patients: changes
+    * his_patient_mrn: changed data type to (string)
+
 ## v1.0.6 - 2023-07-29
 * Fix disable machine showing in results entry
 * Fix editor issues when printing and when copying from ms word
@@ -16,7 +33,6 @@
 * Overdue time management in results page
 * Remove (received, tested, authorized, released) statuses from "Order change status modal"
 * Inprintable tests now releases at authorization step directly
-
 * ### Database Updates
 * visits: changes
   * his_visit_id: new (uuid, nullable, index)

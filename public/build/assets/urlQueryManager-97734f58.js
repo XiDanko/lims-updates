@@ -1,0 +1,1 @@
+import{e as s,f as n}from"./main-bf2af1c2.js";const p=()=>{const r=s(),a=n(),e=new URLSearchParams(window.location.search);return{urlQuery:e,updateUrlQuery:async t=>(new URLSearchParams(t).forEach((u,o)=>{e.set(o,u)}),await r.replace(`${a.path}?${e}`),e)}};export{p as u};
