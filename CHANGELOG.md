@@ -1,3 +1,11 @@
+## v1.0.8 - 2023-09-06
+* Fix his integration (mainly for sClinic)
+* Fix saving new visit will reset contact method to 'none' ignoring branch default settings 
+* Ability to print barcodes and accept orders from his
+* Ability to order (tests, packages, services) from his
+* When lab is selected in new visits page the patient number will change to the selected lab number
+* While creating new visits patient phone number won't reset after saving if visit has lab
+
 ## v1.0.7 - 2023-08-12
 * Fix results received from machines having duplicate mapcode results in duplicate entries for same parameter
 * Fix patient name sometimes not showing in followup page
