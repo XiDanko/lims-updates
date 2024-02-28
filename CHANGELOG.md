@@ -1,3 +1,99 @@
+## v1.1.0 - 2024-02-28
+* Fix "jasperserver" and "his integration" settings not showing when giving "show" permissions
+* Fix lab name always showing as "local" in results entry page
+* Fix minor design issues
+* Fix "whatsapp settings" requires "token" and "instance id" event when disabled
+* Fix Invoice creation details not showing in activity log
+* Fix Roles and permissions caching problem in case of multiple branches
+* Fix server error when saving price list item with no price
+* Fix print images fails saving on multiple create
+* Fix print images not clearing departments after changing branch
+* Fix report undefined causing report loading error
+* Fix item not showing when editing price list item
+* Fix item not showing when editing quick add item
+* Fix followup date filter
+* Fix orders page window scroll issue caused by filters wrap
+* Fix user signature server error
+* Fix date filter in samples collection and samples accession
+* Fix buttons design in samples collection and samples accession
+* Fix fetching previous results causing 2100 sql parameter issue
+* Fix duplicate reg number when created by a partner
+* Fix regenerate id causing not authorized issue
+* Fix copy branch data causing issues caused by duplicated created_at and updated_at values
+* Fix some design problems
+* Fix camera modal causing view live video play on iphone issue
+* Fix camera modal auto inverts horizontally when on user mod 
+* Fix no query result for invoice item when creating premarital visits with user having more than one branch 
+* Fix some filters design
+* Fix permission sync command
+* Remove special permissions
+* Extra validation for reference range between operator now doesnt allow spaces
+* Changed "user form" layout
+* Print buttons now has their own loading states in (visits) page (can do multiple prints at once)
+* Ability to download any prinable as pdf by holding shift key and click
+* Ability to force print dialog by holding ctrl and click 
+* Editing a visit won't print anything
+* Integration log now opens all data tags on a single click
+* New "Check All" and "Clear" buttons for permission selection
+* New forms design
+* Change filter design
+* Greatly improve mobile experience
+* Update manager now shows changelog when application is up-to-date
+* Jasper reports now support http and https according to client protocol
+* Integrate online activation
+* Reference range unit is not required anymore
+* Whatsapp messages now uses queues
+* New "IsPrintable" for parameters
+* Ability to add placeholders for (editor, text and multiline) results type
+* No need to manually refresh after editing or adding new branch
+* Ability to sort orders in desc or asc and save current selection to local storage
+* Changed results orders status filter behaviour
+* User cant update or cancel-receive transfer-in or transfer-out transactions
+* Rejected samples will be shown at results monitor until recollected
+* Formula type parameter results will show up to 4 decimal places if there is
+* Live phone number validation for patients, visits and premarital forms
+* Change international phone number format to local format
+### Database Updates
+* package_test: changes
+  * id: new (uuid, primary)
+* department_machine: changes
+    * id: new (uuid, primary)
+* user_can_view_departments: changes
+    * id: new (uuid, primary)
+* user_can_authorize_departments: changes
+    * id: new (uuid, primary)
+* followup_visit: changes
+    * id: new (uuid, primary)
+* branch_user: changes
+    * id: new (uuid, primary)
+* inventory_user: changes
+    * id: new (uuid, primary)
+* branch_product: changes
+    * id: new (uuid, primary)
+* visits: changes
+  * spouse_visit_id: new (uuid, index)
+  * branch_id, number: unique constrain
+invoices: changes
+  * branch_id, number: unique constrain
+* packages: changes
+  * is_premarital_screening_package: renamed to (is_premarital)
+* parameters: changes
+  * is_printable: new (boolean, default true)
+* reference_ranges: changes
+  * unit: nullable
+* couples_personal_information: removed
+* couples_medical_history: removed
+* premarital_screening: removed
+* premarital_visits: new
+* premarital_consultations: new
+* premarital_personal_information: new
+* premarital_referrals: new
+* attachments: new
+* inventories: new
+* products: new
+* product_units: new
+* inventory_user: new
+
 ## v1.0.8 - 2023-09-06
 * Fix his integration (mainly for sClinic)
 * Fix saving new visit will reset contact method to 'none' ignoring branch default settings 
@@ -19,7 +115,7 @@
 * Integration Log new filters (sample barcode and level), new messages options in message filter
 * New "Clone" action in roles and result templates
 * Force mobile viewport to initial width of 1920px
-* * ### Database Updates
+### Database Updates
 * patients: changes
     * his_patient_mrn: changed data type to (string)
 
@@ -41,7 +137,7 @@
 * Overdue time management in results page
 * Remove (received, tested, authorized, released) statuses from "Order change status modal"
 * Inprintable tests now releases at authorization step directly
-* ### Database Updates
+### Database Updates
 * visits: changes
   * his_visit_id: new (uuid, nullable, index)
 * patients: changes
@@ -84,7 +180,7 @@
 * Remove default gender value from visit and patient forms
 * Rate by partner ratio and item shares
 * Ability to set instance_id and token directly in whatsapp settings
-* ### Database Updates
+### Database Updates
 * incomes: removed
 * expenses: removed
 * registers: changes

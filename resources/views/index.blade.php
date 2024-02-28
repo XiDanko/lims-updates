@@ -2,7 +2,7 @@
 <html lang="{{ config('app.locale') }}">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920, user-scalable=no">
+    <meta name="viewport" content="width=1280, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name='designer' content='Jalal Al-Mussawi, xidanko07@gmail.com'>
     <link rel="apple-touch-icon" sizes="180x180" href="/storage/favicon/apple-touch-icon.png">
@@ -18,6 +18,12 @@
     @vite('resources/ts/main.ts')
 </head>
 <body {!! app()->getLocale() === 'ar' ? 'dir="rtl"' : 'dir="ltr"' !!} class="bg-gray-100 text-gray-600">
-<div id="app"></div>
+    @if(cache()->has('activation.remainingDays') && cache('activation.remainingDays') <= 7)
+        <div class="fixed bg-red-500 text-white font-bold z-[100] inset-x-0 top-0 px-2">Application will be expired in {{ cache('activation.remainingDays') }} days.</div>
+    @endif
+    <div id="app"></div>
+    <script>
+        window.translation = {!! file_get_contents(lang_path(app()->getLocale() . '.json')) !!}
+    </script>
 </body>
 </html>
