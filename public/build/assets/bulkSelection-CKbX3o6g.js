@@ -1,0 +1,1 @@
+import{e as o}from"./main-DNdNUUJ7.js";const u=()=>{const l=o(new Set),s=(e,t)=>{t?l.value.add(e.id):l.value.delete(e.id)};return{selectedRecordsIds:l,toggle:s,toggleAll:(e,t)=>{e.forEach(c=>s(c,t))},clear:()=>l.value.clear(),isSelected:e=>l.value.has(e.id),isAllSelected:e=>e.every(t=>l.value.has(t.id))}};export{u};

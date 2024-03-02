@@ -1,3 +1,21 @@
+## v1.1.1 - 2024-03-01
+### Fixes:
+* Reference doctor not showing in result entry page
+* All printables goes to barcode printer when direct printing
+* Print template form doesnt load selected branch tests for results type
+* Print template type filter doesnt show all values
+### Features:
+* Ability to select or create new printer for any print template (used for direct print only)
+### Chores:
+* When premarital consultation is created orders are immediately accepted
+* Much cleaner print api
+* Limit roadrunner workers to 2 instances
+* Prevent printing samples barcodes when patient has no orders
+* Show "Invalid barcode" error when scanning invalid barcode in "results entry" page
+### Database Updates:
+* print_templates: changes
+  * printer: new (string)
+
 ## v1.1.0 - 2024-02-28
 * Fix "jasperserver" and "his integration" settings not showing when giving "show" permissions
 * Fix lab name always showing as "local" in results entry page

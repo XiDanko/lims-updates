@@ -17,7 +17,7 @@ http:
   address: 0.0.0.0:9090
   middleware: ["static", "gzip"]
   pool:
-    num_workers: 0
+    num_workers: 2
 
   static:
     dir: "public"
