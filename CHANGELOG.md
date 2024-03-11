@@ -1,3 +1,18 @@
+## v1.1.2 - 2024-03-11
+### Fixes:
+* Patients duplication issue
+* Partner form 'ratio' label validation design issue
+* Trim patients name from any excess spaces created by premarital visits
+### Features:
+* Ability to limit user minimum payments and maximum discount per invoice
+* New "Merge Duplicate Patients" tool
+### Chores:
+* Reset roadrunner "workers_number"
+### Database Updates:
+* users: (changes)
+  * minimum_payment: new(tinyint, unsigned, nullable)
+  * maximum_discount: new(tinyint, unsigned, nullable)
+
 ## v1.1.1 - 2024-03-01
 ### Fixes:
 * Reference doctor not showing in result entry page
