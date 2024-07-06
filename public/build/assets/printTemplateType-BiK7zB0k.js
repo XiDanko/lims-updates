@@ -1,1 +1,0 @@
-var a=(r=>(r.SampleBarcode="sampleBarcode",r.SampleBarcodeDepWise="sampleBarcodeDepWise",r.VisitBarcode="visitBarcode",r.Invoice="invoice",r.PremaritalResult="premaritalResult",r.PremaritalReferral="premaritalReferral",r.Results="results",r.PurchaseOrder="purchaseOrder",r.ReceivingOrder="receivingOrder",r))(a||{});export{a as P};

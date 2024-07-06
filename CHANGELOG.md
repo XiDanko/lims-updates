@@ -1,3 +1,41 @@
+## v1.1.3 - 2024-07-05
+### Fixes:
+* Giving too many roles causes user roles design in navigation sidebar to overflow
+* Printing too many files though HW bridge causing it to not work properly
+* Invoice created by remote his doesn't respect his price (always using lis price)
+* Selecting multiple records in (sample accession, sample collection and orders) pages doesnt work properly
+* Transactions made by other branches don't show in register transactions page and don't get calculated in the transaction summery if the logged-in user isn't assigned to that branch as well 
+* Followup pagination showing duplicate data
+* Followup is created for default numbers
+* Patients created using patients management page causing phone number issues
+* Many issues caused by local to international phone number conversion
+* Registration number filter in results page
+* Fix division by zero issue when total is zero and user has payment limit
+### Features:
+* Multi branch multi inventory management with multi units and stock batch support with request-order-receipt flow in mind
+* New parameter result type (file) with ability to force specific file type (image or pdf)
+* New name filter in roles page
+* New category field for expense type transactions
+* Worldwide phone number support
+* Show four decimal points only in 0 value results
+* Patient name filters now uses wildcard method for searching
+### Chores:
+* Manually adding .pdf to all downloadable prints and whatsapp files
+* Adding date parameter for barcodes printing
+* Adding validation for locale cookie value (en, ar)
+* Patient default phone number is no longer required in general settings
+* Limit patients names to the latest 5 names using same number in patients followup page
+* His integration now creates open invoices with due balance (no payments)
+### Database Updates:
+* followups: changes
+  * date: change type to datetime
+* transactions: changes
+  * category: new(string, nullable)
+* results: changes
+  * notes: change type to longtext
+* suggestions: changes
+  * content: change type to longtext
+  
 ## v1.1.2 - 2024-03-11
 ### Fixes:
 * Patients duplication issue
