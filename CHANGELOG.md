@@ -1,3 +1,8 @@
+## v1.1.4 - 2024-07-16
+### Fixes:
+* Uploaded file gets removed after saving the results for a second time
+* Patient contact method set to null after form reset when partner is selected
+
 ## v1.1.3 - 2024-07-05
 ### Fixes:
 * Giving too many roles causes user roles design in navigation sidebar to overflow
