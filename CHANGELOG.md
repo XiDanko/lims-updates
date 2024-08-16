@@ -1,3 +1,46 @@
+## v1.1.6 - 2024-05-16
+### Fixes:
+
+### Features:
+
+### Chores:
+
+### Database Updates:
+
+## v1.1.5 - 2024-08-16
+### Fixes:
+* Patient name is clipped in some cases in results monitor page
+* Premarital results page break when adding new tests in premarital package (only for old patients)
+* Stock transactions units
+* Transfer receipts product unit always defers to base unit even if user change it
+* Editing purchase receipt doesnt correct stock instead it adds another stock
+* Users are able to return out stock by transfer receipt in stock transactions page
+
+### Features:
+* New Expiry Date filter in stock details page
+* Alert quantities stock now marked yellow
+* Zero quantities stock now marked red
+* Expired quantities are marked red in stock details page
+* Ability to add free quantities in purchase receipts
+* Ability to add discount in purchase receipts
+* Show total summery in (stock, stock details and purchase receipt) pages
+* Purchase Receipts: new suppliers filter
+* Creditor Page: new page listing creditors ledgers with multiple
+* New Tool: copy test parameters
+* New Tool: copy reference ranges
+* New CRUD Page: expense categories
+
+### Database Updates:
+* purchase_receipt_items(changes)
+  * free_product_unit_id: new (uuid, nullable, index)
+  * free_quantity: new (uuid, nullable, index)
+* stock(changes)
+  * price: change datatype to float
+* transactions(changes)
+  * category: remove
+  * expense_category_id: new (uuid, nullable, index)
+* expense_categories(new)
+
 ## v1.1.4 - 2024-07-16
 ### Fixes:
 * Uploaded file gets removed after saving the results for a second time
