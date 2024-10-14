@@ -1,11 +1,51 @@
-## v1.1.6 - 2024-05-16
+## v1.1.6 - 2024-10-14
 ### Fixes:
+* My register page permissions
+* Premarital print page index permission
+* Premarital visit save button keeps loading when editing then cancel the confirmation box
+* Transactions page: category field always empty issue
+* Packages page: updating a premarital package causes premarital toggle to switch off
+* Printing premarital results from 'print page' also changes orders to 'released' in 'orders' page
+* Premarital receipt date showing always as 12-10-2024 issue
+* Copy parameter tool: fix some tests not showing in the list
+* Copy parameter tool: fix error when replication is configured
+* Copy reference ranges tool: fix some tests not showing in the list
+* Copy reference ranges tool: fix error when replication is configured
 
 ### Features:
+* Show duplication warning when creating new premarital visit with existing information
+* Show duplication warning when printing premarital visit if another visit exists with same data
+* Narcotics management
 
 ### Chores:
+* Premarital visits page: enhance saving time
+* Result template form: show content validation error
+* Result template form: cloning a record now only copies name and content
+* Remove branch restriction from patients
+* Techport copy right mark in login and navbar
 
 ### Database Updates:
+* visits: changes
+  * number: change int to bigint
+* invoices: changes
+  * number: change int to bigint
+* premarital_visits: changes
+  * number: change int to bigint
+  * invoice_number: change int to bigint
+* purchase_orders: changes
+  * number: change int to bigint
+* purchase_receipts: changes
+  * number: change int to bigint
+* transfer_requests: changes
+  * number: change int to bigint
+* transfer_orders: changes
+  * number: change int to bigint
+* transfer_receipts: changes
+  * number: change int to bigint
+* patients: changes
+  * branch_id: removed
+* narcotics_visits: new
+* narcotics_referrals: new
 
 ## v1.1.5 - 2024-08-16
 ### Fixes:
