@@ -1,3 +1,74 @@
+## v1.2.0 - 2024-12-20
+### Fixes:
+* Narcotics results page: printing/uploading results didn't update the status immediately
+* Premarital print page: uploading/sending results didn't update the status immediately
+* His was not ignoring partner id when not set
+* Dashboard was not loading because of patients and visits statistics query issue
+* Remember me check box in login page now actually works
+* Suppliers branch filter
+* Tests consumables filter
+* Creating register transactions on any register by changing register id in my register page
+* Regenerate Id tool, Merge Duplicate Patients tool, Clear Patient Data tool
+* Activity log date filter makes double requests
+
+### Features:
+* New visit page: ability to search for orders in arabic characters 
+* Ability to define profit margin for products
+* New product categories page and ability to add children categories to a root category
+* Ability to add images for products and categories
+* New cost field for stock and receipt items
+* Fullscreen mode
+* Ability to toggle navbar
+* Prevent duplicate premarital visit based on national ids for husband and wife
+* New Price Scanner page to scan products and get the price
+* New POS page
+* New Customers page
+* New "Active" filter in all related pages
+* New "Save" button in editor type parameter in results entry page
+* Adding a note for orders in "new visitation" page will add the same note to the order in "orders" page
+* New self results print page
+
+### Chores:
+* His visit creation api: patients contact methods is set to default contact method
+* Premarital visits: patients contact methods is set to default contact method
+* Narcotics visits: patients contact methods is set to default contact method
+* Narcotics visits: add address field
+* Invoice form: remove branch id from patients filter
+* Invoice transactions: sort record by creating date from old to new
+* Results monitor link added to front desk in navigation
+* Reduce premarital camera image resolution to 320x240
+* Adding current user id to all jasper printables
+* round all prices in stock to closest 250
+* round all costs to remove any decimal points
+* Increase autorefresh duration from 15s to 30s
+* Disable autorefresh when user is not on first page
+* Greatly increase paginator performance when loading lots of pages
+
+### Database Updates:
+* product_categories: new
+* branch_product_category: new
+* products: changes
+  * product_category_id: new (uuid, nullable)
+  * profit_type: new (string)
+  * profit_amount: new (unsigned int)
+  * image_path: new (string, nullable)
+  * generic_name: new (string, nullable, index)
+* stocks: changes
+  * cost: new (unsigned int)
+  * price: changed from float to int
+* purchase_receipt_items: changes
+  * cost: new (unsigned int)
+  * price: changed from float to int
+* narcotics_visits: changes
+  * address: new (string, nullable)
+* invoice_items: changes
+  * stock_id: new (uuid, nullable, index)
+  * product_unit_id: new (uuid, nullable, index)
+* patients: changes
+  * is_customer: new (boolean, false)
+* invoices: changes
+    * is_pos: new (boolean, false)
+
 ## v1.1.6 - 2024-10-14
 ### Fixes:
 * My register page permissions
