@@ -1,4 +1,8 @@
-## v1.2.0 - 2024-12-20
+## v1.2.1 - 2025-01-10
+### Fixes:
+* Insufficient quantity in stock issue
+
+## v1.2.0 - 2025-01-09
 ### Fixes:
 * Narcotics results page: printing/uploading results didn't update the status immediately
 * Premarital print page: uploading/sending results didn't update the status immediately
