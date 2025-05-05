@@ -1,3 +1,39 @@
+## v1.2.2 - 2025-05-5
+### Fixes:
+* Premarital, Narcotics and His visits creation issue
+* Premarital fix update issue
+* Fullscreen and navigation arrows in rtl view
+* Results with value of (0) saving issue
+* Merge duplicate patients issue when user doesnt have all branches
+* Purchase receipts total was calculated using the price instead of cost
+* Inactive product units not showing issue
+* Inability to create consumables for a test on different machines issue
+
+### Features:
+* When user doesn't have pay permission the invoice will always be open with no payment
+* Permission to view or hide invoices summery
+* User won't be able to add payment when creating invoice if user doesnt have payment permissions
+* Ability to add doctor and center when creating visits from his
+* New description field for tests
+* Add total charges and paid amount to patients followup
+* Cache all definitions for better performance
+
+### Chores:
+* Premarital show successful toast when canceling visit
+* Premarital visits considered duplicates if registered within 3 months
+* Unify dates format
+* Orders, samples collection and samples accession pages auto refreshes only when today is selected
+* Price Checker Page: center price
+* Price Checker Page: show product image
+* Pos page: add quantity to patch select modal
+* Products: generic name is not required anymore
+* POS: when product is selected and rescanned again i will increase quantity immediately
+* Expense categories: add branch name and branch filter
+
+### Database Updates:
+* tests: changes
+    * description: new (text, nullable)
+
 ## v1.2.1 - 2025-01-10
 ### Fixes:
 * Insufficient quantity in stock issue
