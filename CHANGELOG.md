@@ -1,3 +1,17 @@
+## v1.3.0 - 2025-06-06
+### Fixes:
+* Orders id was invalid in orders page
+* Menses days save issue
+* Permission to show/hide register transaction detailed summery
+
+### Features:
+* Show patient's age in orders page
+* New tool: Refresh Application
+* Prevent premarital visit update after consultation (except force update permission)
+
+### Chores:
+* Upgrade dependencies
+
 ## v1.2.2 - 2025-05-5
 ### Fixes:
 * Premarital, Narcotics and His visits creation issue
@@ -12,7 +26,7 @@
 ### Features:
 * When user doesn't have pay permission the invoice will always be open with no payment
 * Permission to view or hide invoices summery
-* User won't be able to add payment when creating invoice if user doesnt have payment permissions
+* User won't be able to add payment when creating invoice if user doesn't have payment permissions
 * Ability to add doctor and center when creating visits from his
 * New description field for tests
 * Add total charges and paid amount to patients followup
