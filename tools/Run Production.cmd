@@ -9,9 +9,6 @@ copy .env.production .env
 
 echo Deleting unwanted files...
 rm ".env.production"
-del /s /q bootstrap\cache\*
-del /s /q storage\framework\cache\data\*
 del /s /q storage\framework\sessions\*
-del /s /q storage\framework\views\*
 
 pause

@@ -1,3 +1,11 @@
+## v1.3.1 - 2025-06-11
+### Fixes:
+* Too Many Attempts issue
+* Cache issues
+
+### Features:
+* New tool: Execute SQL Statement
+
 ## v1.3.0 - 2025-06-06
 ### Fixes:
 * Orders id was invalid in orders page
