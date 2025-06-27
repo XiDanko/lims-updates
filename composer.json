@@ -15,7 +15,6 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "propaganistas/laravel-phone": "^5.3",
-        "rennokki/laravel-eloquent-query-cache": "^3.6",
         "setasign/fpdf": "^1.8",
         "setasign/fpdi": "^2.3",
         "spatie/laravel-permission": "^6.3.0",

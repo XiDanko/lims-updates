@@ -1,3 +1,21 @@
+## v1.3.2 - 2025-06-27
+### Fixes:
+* Results monitor sometimes not showing completed results
+* Results monitor showing only the first branch of the signed in user
+* Application expired issue
+
+### Features:
+* New Governorates and Districts management pages
+* Governorate and District fields in premarital
+* premarital address field is no longer required
+
+### Database Updates:
+* governorates: new
+* districts: new
+* premarital_personal_information: changes
+  * governorate_id: new (uuid, index, nullable)
+  * district_id: new (uuid, index, nullable)
+
 ## v1.3.1 - 2025-06-11
 ### Fixes:
 * Too Many Attempts issue
