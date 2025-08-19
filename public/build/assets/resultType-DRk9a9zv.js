@@ -1,0 +1,1 @@
+var t=(i=>(i.NegativePositive="negative/positive",i.Numeric="numeric",i.Text="text",i.Multiline="multiline",i.List="list",i.Multiselect="multiselect",i.Formula="formula",i.Editor="editor",i.File="file",i))(t||{});export{t as R};
