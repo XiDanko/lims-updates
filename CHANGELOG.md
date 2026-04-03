@@ -1,3 +1,58 @@
+## v1.3.5 - 2026-04-03
+### Fixes:
+* *Diabetes* option not found for wife medical history in *premarital consultation form*
+* Print bridge doesnt connect automatically in *self results print* page
+* *Results Monitor* page now supports older browsers
+* Premarital foreigner toggle for wife issue
+* Double load problem in *activity log page*
+* Rate amount with decimal points causes server error because of datatype mismatch
+* *Purchase Orders* fix discount wont allow decimal points
+* Fix inventory consumable deduction
+* Some filters design issues
+* Same *price list* name for different branch was not allowed
+* *Premarital Results Page* bulk upload and send functionality
+* Product price calculation issue when profit type is fixed and a unit is selected
+* Major inventory fixes
+* POS discount issue
+* Ads images keeps on appearing in *Results Monitor* event if its disabled
+
+### Features:
+* Better upload method for premarital and narcotic visit attachments
+* Ability to show premarital visit information
+* Roles now are branch ignostic
+* Products and Product Categories now are branch ignostic
+* Telescope added for monitoring system
+* Alert stocks filter in *stock* page
+* Available Quantity filter in *stock details* page
+* Emergency Toggle in *visits* page and *orders* page
+* Visit attachments that also appears in results entry form
+* Invoices now has a *Percentage discount toggle*
+
+### Chores:
+* Added null safety to front pages
+* Tools: Removed *regenerate id*
+* Huge performance upgrade 
+
+### Database Updates:
+* rates: changes
+    * amount: data type from int to float
+* roles: changes
+  * branch_id: removed
+  * display_name: removed
+* telescope_entries: new
+* telescope_entries_tags: new
+* telescope_monitoring: new
+* branch_product_category: removed
+* branch_product: removed
+* suggestions: changes
+  * branch_id: nullable
+* visits: changes
+  * is_emergency: new (boolean, default false)
+* purchase_receipts: changes
+  * discount: change to (double)
+* attachments: changes
+  * type: changes to nullable
+
 ## v1.3.4 - 2025-12-02
 ### Fixes:
 * Orders status changes to *in-progress* even though the mapcode *send* is set to *false*

@@ -39,6 +39,7 @@
     "No.": "ت",
     "View Activities": "عرض الحركات",
     "Edit": "تعديل",
+    "Show": "عرض",
     "Delete": "حذف",
     "Activity Log": "سجل الحركات",
     "none": "لا يوجد",
@@ -78,6 +79,7 @@
     "Referrals": "الاحالات",
     "New Premarital Visit": "زيارة متزوجين جديدة",
     "Edit Premarital Visit": "تعديل زيارة المتزوجين",
+    "Show Premarital Visit": "معاينة زيارة المتزوجين",
     "Husband Information": "معلومات الزوج",
     "Wife Information": "معلومات الزوجة",
     "Foreigner": "خارج القطر",
@@ -176,5 +178,6 @@
     "Upload Status": "حالة الرفع",
     "Print Results": "طباعة النتائج",
     "Risk Free": "لائق",
+    "Uploading :percentage": "يتم الرفع :percentage",
     "": ""
 }
