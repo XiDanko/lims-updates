@@ -1,3 +1,11 @@
+## v1.3.6 - 2026-04-05
+### Fixes:
+* issue loading *register transactions* and *my register*
+
+### Features:
+* Emergency toggle now in the visit form
+* New *Count* summery info in *Orders* page
+
 ## v1.3.5 - 2026-04-03
 ### Fixes:
 * *Diabetes* option not found for wife medical history in *premarital consultation form*
