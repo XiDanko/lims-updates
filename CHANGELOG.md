@@ -1,3 +1,38 @@
+## v1.3.7 - 2026-06-05
+### Fixes:
+* Visit creation issue when user is linked to a partner
+* Clear patient data tool permission
+* Stock Transactions reference loading error
+* Expense category not showing in *Register Transactions* page
+* Print template not found in *Self results print* page
+* Partners list doesn't load for multi-branch setup in *user form*
+* User cant deselect partner in *user form*
+* Unable to deselect menses duration in *visits page*
+* Whatsapp web ignores new lines
+
+### Features:
+* Integration with sClinic
+* Patient name is added to related stock transactions
+* Stock details now ordered by expiry date
+* Patient name filter in *stock transactions* page
+* New Whatsapp integration
+* New decimal places field in *parameters form* that controls how many decimal points the result should hold
+* Separate *With Design* toggle save status in *Result Release* for print and send
+* New *Patient Name* dynamic value for whatsapp welcome and result message
+* New *Self Results Print With Design* toggle in general settings to control design presence in self-printed results
+* Direct Webcam Capture functionality integrated into file dropzones across the application
+
+### Chores:
+* Upgrade dependencies
+
+### Database Updates:
+* visits: changes
+    * his_visit_id: remove
+* patients: changes
+    * his_patient_id: removed
+* parameters: changes
+  * decimal_places: new (integer, nullable)
+
 ## v1.3.6 - 2026-04-05
 ### Fixes:
 * issue loading *register transactions* and *my register*

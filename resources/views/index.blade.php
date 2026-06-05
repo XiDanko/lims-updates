@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=1280, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name='designer' content='Jalal Al-Mussawi, xidanko07@gmail.com'>
-    <link rel="apple-touch-icon" sizes="180x180" href="/storage/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/storage/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/storage/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/storage/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/storage/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="/storage/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/storage/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/storage/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/storage/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/storage/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/storage/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/storage/assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/storage/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="/storage/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <title>LIMS</title>
     @vite('resources/ts/main.ts')
