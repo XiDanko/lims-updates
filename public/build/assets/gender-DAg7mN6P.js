@@ -1,0 +1,1 @@
+var e=function(e){return e.Male=`male`,e.Female=`female`,e}(e||{});export{e as t};

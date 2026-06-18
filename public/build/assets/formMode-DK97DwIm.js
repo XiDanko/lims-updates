@@ -1,0 +1,1 @@
+var e=function(e){return e.Create=`create`,e.Edit=`edit`,e.Clone=`clone`,e.Show=`show`,e}(e||{});export{e as t};

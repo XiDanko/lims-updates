@@ -1,0 +1,1 @@
+var e=function(e){return e.Test=`test`,e.Package=`package`,e.Service=`service`,e.Product=`product`,e}(e||{});export{e as t};

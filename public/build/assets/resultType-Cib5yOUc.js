@@ -1,0 +1,1 @@
+var e=function(e){return e.NegativePositive=`negative/positive`,e.Numeric=`numeric`,e.Text=`text`,e.Multiline=`multiline`,e.List=`list`,e.Multiselect=`multiselect`,e.Formula=`formula`,e.Editor=`editor`,e.File=`file`,e}(e||{});export{e as t};

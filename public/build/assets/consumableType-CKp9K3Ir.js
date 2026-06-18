@@ -1,0 +1,1 @@
+var e=function(e){return e.Test=`test`,e.Service=`service`,e.Package=`package`,e.SampleType=`sampleType`,e.Visit=`visit`,e}(e||{});export{e as t};

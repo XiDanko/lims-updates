@@ -1,0 +1,1 @@
+var e=function(e){return e.Center=`center`,e.Lab=`lab`,e.Doctor=`doctor`,e}(e||{});export{e as t};

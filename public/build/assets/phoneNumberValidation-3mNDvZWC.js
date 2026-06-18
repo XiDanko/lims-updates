@@ -1,0 +1,1 @@
+var e=()=>({isValidPhoneNumber:e=>e?isNaN(e)?!1:!!(!e.startsWith(`+964`)||e.startsWith(`+9647`)&&e.length===14||e.startsWith(`+96407`)&&e.length===15):!0});export{e as t};

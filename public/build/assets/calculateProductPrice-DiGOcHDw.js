@@ -1,1 +1,0 @@
-import{p as f}from"./productProfitType-ChP3Gnl6.js";const u=(i,t,p)=>{const o=i.profitType;let e=i.profitAmount,r;if(o)return o===f.Percentage?(e=t*e/100,r=t+e):r=e*p+t,Math.ceil(r/250)*250};export{u};

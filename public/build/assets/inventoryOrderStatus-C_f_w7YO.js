@@ -1,0 +1,1 @@
+var e=function(e){return e.Pending=`pending`,e.Approved=`approved`,e.Ordered=`ordered`,e.Received=`received`,e.Canceled=`canceled`,e}(e||{});export{e as t};

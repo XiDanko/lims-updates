@@ -23,6 +23,7 @@
     @endif
     <div id="app"></div>
     <script>
+        window.appName = "{{ config('app.name') }}";
         window.translation = {!! file_get_contents(lang_path(app()->getLocale() . '.json')) !!}
     </script>
 </body>

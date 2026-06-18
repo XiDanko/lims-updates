@@ -1,0 +1,1 @@
+var e=function(e){return e.Percentage=`percentage`,e.Fixed=`fixed`,e}(e||{});export{e as t};

@@ -1,3 +1,22 @@
+## v1.3.8 - 2026-06-18
+### Fixes:
+* Machine integration server error
+* Partner user can see all results and orders
+* Results decimal places doesnt work on formula
+
+### Features:
+* App name added to navigation header
+* Ability to control what gets sent to partner via whatsapp when the patient phone number is same as partner phone number in visits
+* Whatsapp messages are now rate limited per instance using a customized delay period
+* Spintax feature added to WhatsApp welcome and result messages with three configurable sentence variables
+
+### Database Updates:
+* partners: changes
+    * send_welcome_message: new (bool default false)
+    * send_invoice: new (bool default true)
+    * send_result_message: new (bool default true)
+    * send_result: new (bool default true)
+
 ## v1.3.7 - 2026-06-05
 ### Fixes:
 * Visit creation issue when user is linked to a partner

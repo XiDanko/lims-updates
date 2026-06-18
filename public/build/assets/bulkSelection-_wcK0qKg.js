@@ -1,0 +1,1 @@
+import{et as e,st as t}from"./vue.runtime.esm-bundler-ClSb5ee8.js";e();var n=()=>{let e=t(new Set),n=(t,n)=>{n?e.value.add(t.id):e.value.delete(t.id)};return{selectedRecordsIds:e,toggle:n,toggleAll:(e,t)=>{e.forEach(e=>n(e,t))},clear:()=>e.value.clear(),isSelected:t=>e.value.has(t.id),isAllSelected:t=>t.every(t=>e.value.has(t.id))}};export{n as t};

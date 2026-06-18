@@ -1,0 +1,1 @@
+var e=function(e){return e.Registered=`registered`,e.Tested=`tested`,e.Authorized=`authorized`,e.Referred=`referred`,e.Printed=`printed`,e.Canceled=`canceled`,e}(e||{});export{e as t};
