@@ -1,0 +1,1 @@
+import{t as e}from"./productProfitType-rBNzCplX.js";var t=(t,n,r)=>{let i=t.profitType,a=t.profitAmount,o;if(i)return i===e.Percentage?(a=n*a/100,o=n+a):o=a*r+n,Math.ceil(o/250)*250};export{t};
