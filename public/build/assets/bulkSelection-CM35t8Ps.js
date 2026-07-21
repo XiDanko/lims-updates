@@ -1,1 +1,0 @@
-import{Tt as e}from"./main-BTLOr5xe.js";var t=()=>{let t=e(new Set),n=(e,n)=>{n?t.value.add(e.id):t.value.delete(e.id)};return{selectedRecordsIds:t,toggle:n,toggleAll:(e,t)=>{e.forEach(e=>n(e,t))},clear:()=>t.value.clear(),isSelected:e=>t.value.has(e.id),isAllSelected:e=>e.every(e=>t.value.has(e.id))}};export{t};

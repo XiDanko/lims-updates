@@ -1,3 +1,26 @@
+## v1.3.10 - 2026-07-20
+### Fixes:
+* Formula parameters calculation issues
+* Editing a report deletes the permission and detach it from roles issue
+* Sample collection & Sample accession pages server error
+
+### Features:
+* Reports now natively support local (ip) and online
+* Self results print page: results with due balance will show a notification to visit the cashier to check their balance
+* Parameters with formula result type now supports more math symbols (^, log, ln, etc...)
+* Added 'paid invoices' toggle in HIS integration settings to automatically fully pay invoices
+* Result files uploaded to LIMS Portal are now always generated with the header design enabled, even if printed or sent without design
+* Added support for Ultramsg as an alternative WhatsApp provider, configurable in the WhatsApp Settings page
+
+## v1.3.9 - 2026-06-29
+### Fixes:
+* Ar-en color mismatch
+* Navigation issues
+
+### Features:
+* Added new LIMS Portal settings
+* Ability to upload results to online patient portal
+
 ## v1.3.8 - 2026-06-18
 ### Fixes:
 * Machine integration server error
