@@ -1,0 +1,1 @@
+import{O as e,k as t}from"./main-DxMLlFL-.js";var n=()=>{let n=t(),r=e(),i=new URLSearchParams(window.location.search);return{urlQuery:i,updateUrlQuery:async e=>(new URLSearchParams(e).forEach((e,t)=>{i.set(t,e)}),await n.replace(`${r.path}?${i}`),i)}};export{n as t};

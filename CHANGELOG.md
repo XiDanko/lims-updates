@@ -1,3 +1,21 @@
+## v1.3.11 - 2026-08-20
+### Fixes
+* Followup page: restrict partner users to show only their partner related followups
+* Partner list: restrict partner users to show only their partner
+* Fix his visit update issue related to "Duplicate orders detected"
+
+## Features:
+* New *Registers Settlement* feature
+
+## Chores
+* Database optimizations
+* Remove unnecessary RegisterTransaction.showSummery 
+* Remove invoice create button in invoices
+
+### Database Updates:
+* transactions: changes
+    * settlement_id: new (uuid nullable)
+
 ## v1.3.10 - 2026-07-20
 ### Fixes:
 * Formula parameters calculation issues
