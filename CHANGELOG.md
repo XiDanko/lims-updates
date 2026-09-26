@@ -1,3 +1,7 @@
+## v1.3.12 - 2026-09-26
+### Chores:
+* System optimizations
+
 ## v1.3.11 - 2026-08-20
 ### Fixes
 * Followup page: restrict partner users to show only their partner related followups
