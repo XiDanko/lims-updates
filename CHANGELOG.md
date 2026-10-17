@@ -1,3 +1,15 @@
+## v1.3.13 - 2026-10-17
+### Fixes
+* Copy branch data tool fixes and enhancements
+* Clear patients data tool now clears users, partners and related tables
+* Opcache compile issue
+* Invoice page now shows the registration number instead of the invoice number
+* Invoice page registration number filter now fixed and actually searches for the visit registration number instead of the invoice number
+* Reference range parameter filter now shows only the selected test parameters
+* Result set field now wider and shows machine code instead of name
+* Fix issues related to sClinic invoices transactions and payment process
+* Partner user can now list all other partners (List only)
+
 ## v1.3.12 - 2026-09-26
 ### Chores:
 * System optimizations
